@@ -59,6 +59,7 @@
 
 ## Referensi ##
 
+* [Instalasi Git di Windows](http://software.endy.muhardin.com/aplikasi/instalasi-git-di-windows)
 * [Buku Git](http://git-scm.com/book)
 * [Tutorial Git Endy](https://github.com/endymuhardin/training-brainmatics-2015-1/blob/master/version-control.md)
 * [Buku Java Desktop Ifnu Bima](http://project-template.googlecode.com/files/Java%20Desktop%20-%20Ifnu%20Bima.pdf)
