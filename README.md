@@ -17,10 +17,23 @@
 
 * Mengakses tabel berelasi dalam database
 * Mengakses server dengan menggunakan protokol HTTP
+* User Manual berisi
+
+    * tujuan/manfaat aplikasi
+    * cara instalasi
+    * cara pakai
+    * hasil yang seharusnya terjadi setelah user memakai aplikasi
+
+## Deliverable ##
+
+* Source Code harus ada di Github/Bitbucket
+* Aplikasi yang sudah siap pakai (zip, apk), link download ada di Github
+* User Manual (format Markdown, dengan screenshot)
+* Aplikasi server harus online (bisa pakai Openshift atau Heroku)
 
 ## Silabus ##
 
-* Git
+* [Git](http://git-scm.org/)
 * Maven
 * Java Fundamental
 * Java Desktop
@@ -46,6 +59,7 @@
 
 ## Referensi ##
 
+* [Buku Git](http://git-scm.com/book)
 * [Buku Java Desktop Ifnu Bima](http://project-template.googlecode.com/files/Java%20Desktop%20-%20Ifnu%20Bima.pdf)
 * [Tutorial Resmi Pemrograman Java](http://docs.oracle.com/javase/tutorial/)
 * [Tutorial Resmi Android Programming](http://developer.android.com/guide/index.html)
