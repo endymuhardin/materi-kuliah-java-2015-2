@@ -43,3 +43,9 @@
     * Content Provider
     * HTTP Request/Response
     * Database Local (SQLite)
+
+## Referensi ##
+
+* [Buku Java Desktop Ifnu Bima](http://project-template.googlecode.com/files/Java%20Desktop%20-%20Ifnu%20Bima.pdf)
+* [Tutorial Resmi Pemrograman Java](http://docs.oracle.com/javase/tutorial/)
+* [Tutorial Resmi Android Programming](http://developer.android.com/guide/index.html)
