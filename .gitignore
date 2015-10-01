@@ -1,0 +1,8 @@
+# Ignore MacOS files
+.DS_Store
+
+# Ignore Maven output
+target
+
+# Ignore Java compile
+*.class
