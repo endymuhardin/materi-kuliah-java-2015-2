@@ -6,3 +6,4 @@ target
 
 # Ignore Java compile
 *.class
+*.swp
