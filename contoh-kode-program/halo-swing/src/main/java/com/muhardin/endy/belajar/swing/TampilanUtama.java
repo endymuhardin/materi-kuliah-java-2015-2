@@ -6,6 +6,9 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
 public class TampilanUtama extends JFrame {
 
     public static void main(String[] xx){
@@ -22,6 +25,7 @@ public class TampilanUtama extends JFrame {
         setTitle("Aplikasi Saya");
         setLayout(new FlowLayout());
         pasangKomponen();
+        pasangEventHandler();
         setSize(400,300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     
@@ -42,10 +46,27 @@ public class TampilanUtama extends JFrame {
     private void pasangKomponen(){
         btnCari = new JButton("Cari");
         txtMahasiswa = new JTextField(15);
+        txtMahasiswa.setEditable(false);
 
         getContentPane().add(new JLabel("Mahasiswa"));
         getContentPane().add(txtMahasiswa);
         getContentPane().add(btnCari);
+    }
+    
+    private void pasangEventHandler(){
+        btnCari.addActionListener(new ActionListener(){
+        
+            public void actionPerformed(ActionEvent e){
+                CariMahasiswaDialog cd = new
+                CariMahasiswaDialog(TampilanUtama.this);
+                cd.setVisible(true);
+            }
+        
+        });
+    }
+
+    public void setMahasiswa(String m){
+        txtMahasiswa.setText(m);
     }
 
     private JButton btnCari;
