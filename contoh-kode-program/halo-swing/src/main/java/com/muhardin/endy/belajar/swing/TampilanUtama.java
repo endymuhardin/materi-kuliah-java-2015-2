@@ -18,12 +18,20 @@ public class TampilanUtama extends JFrame {
 
     public TampilanUtama(){
     
+        tampilkanLoginDialog();
         setTitle("Aplikasi Saya");
         setLayout(new FlowLayout());
         pasangKomponen();
         setSize(400,300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     
+    }
+
+    private void tampilkanLoginDialog(){
+    
+        LoginDialog ld = new LoginDialog(this);
+        ld.setVisible(true);
+
     }
 
     private void pasangKomponen(){
