@@ -78,6 +78,8 @@ public class LoginDialog extends JDialog {
                     );
                     return;
                 }
+
+                induk.setUserAktif(username);
                 
                 LoginDialog.this.dispose();
             }

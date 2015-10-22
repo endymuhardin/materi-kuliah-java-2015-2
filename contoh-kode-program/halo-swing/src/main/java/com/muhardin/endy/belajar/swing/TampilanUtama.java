@@ -34,6 +34,11 @@ public class TampilanUtama extends JFrame {
 
     }
 
+    public void setUserAktif(String u){
+        System.out.println("User aktif : "+u);
+        userYangSedangLogin = u;
+    }
+
     private void pasangKomponen(){
         btnCari = new JButton("Cari");
         txtMahasiswa = new JTextField(15);
@@ -45,4 +50,5 @@ public class TampilanUtama extends JFrame {
 
     private JButton btnCari;
     private JTextField txtMahasiswa;
+    private String userYangSedangLogin;
 }
