@@ -34,6 +34,10 @@ public class DemoTabel {
 
         TabelMahasiswaModel tm = new TabelMahasiswaModel(data);
         JTable tbl = new JTable(tm);
+
+        TabelClickListener tcl = new TabelClickListener(tbl,data);
+        tbl.getSelectionModel().addListSelectionListener(tcl);
+
         fr.getContentPane().add(new JScrollPane(tbl));
     }
 }
