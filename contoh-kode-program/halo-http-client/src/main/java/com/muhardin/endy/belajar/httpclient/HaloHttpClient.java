@@ -1,5 +1,7 @@
 package com.muhardin.endy.belajar.httpclient;
 
+import java.util.HashMap;
+import java.util.Map;
 import org.springframework.web.client.RestTemplate;
 
 public class HaloHttpClient {
@@ -10,11 +12,26 @@ public class HaloHttpClient {
         
         RestTemplate client = new RestTemplate();
         
+        // mengambil data
         User[] hasil = client.getForObject(url, User[].class);
         
         for (User u : hasil) {
             tampilkanUser(u);
         }
+        
+        // mengirim data
+        Post p = new Post();
+        p.setTitle("Judul");
+        p.setBody("Coba coba");
+        p.setUserId("7");
+
+        String urlSimpan = "http://jsonplaceholder.typicode.com/posts";
+        Map<String, Integer> hasil2 = client
+                    .postForObject(
+                            urlSimpan, 
+                            p, 
+                            HashMap.class);
+        System.out.println("ID Post baru : "+hasil2.get("id"));
         
     }
 
